@@ -79,7 +79,7 @@ def render_history(tool_debug):
                                 st.write(current_turn_events_list)
 
 def tool_chat_page():
-    st.title("💬 Chat")
+    # st.title("💬 Chat")
 
     client = llama_stack_api.client
     models = client.models.list()
@@ -280,8 +280,8 @@ def tool_chat_page():
         st.session_state.agent_type = agent_type
         agent = create_agent()
 
-        if "agent_session_id" not in st.session_state:
-            st.session_state["agent_session_id"] = agent.create_session(session_name=f"tool_demo_{uuid.uuid4()}")
+        # if "agent_session_id" not in st.session_state:
+        st.session_state["agent_session_id"] = agent.create_session(session_name=f"tool_demo_{uuid.uuid4()}")
 
         session_id = st.session_state["agent_session_id"]
 

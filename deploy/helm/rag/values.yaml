@@ -136,9 +136,9 @@ minio:
 llama-stack:
   secrets:
     TAVILY_SEARCH_API_KEY: "Paste-your-key-here"
-  mcp-servers: {}
-    #  mcp-weather:
-    #   uri: http://rag-mcp-weather:8000/sse
+  mcp-servers: 
+    mcp-chris:
+      uri: http://mcp-chris:8000/sse
 
 
 ingestion-pipeline:

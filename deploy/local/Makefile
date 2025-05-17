@@ -1,6 +1,6 @@
 VERSION ?= 0.2.6
 TAVILY_SEARCH_API_KEY ?= ""
-CONTAINER_REGISTRY ?= quay.io/ecosystem-appeng
+CONTAINER_REGISTRY ?= quay.io/rbrhssa
 DIST_UI_DIR := $(abspath $(lastword $(MAKEFILE_LIST)/../../../frontend))
 
 setup_local:
